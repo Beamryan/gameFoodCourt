@@ -10,7 +10,7 @@ public class Clock {
 
 	private ClockListener[] myListeners;
 	private int numListeners;
-	private int MAX = 100;
+	private final int MAX = 100;
 
 	public Clock() {
 		numListeners = 0;
