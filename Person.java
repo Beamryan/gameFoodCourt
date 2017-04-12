@@ -1,11 +1,5 @@
-/**
- * 
- */
 package gameFoodCourt;
 
-/**
- * @author   Roger Ferguson
- */
 public class Person {
 	private int tickTime;
 	private double eateryTime;
@@ -18,36 +12,30 @@ public class Person {
 		this.eateryTime = eateryTime;
 		this.leaveTime = leaveTime;
 		this.checkoutTime = checkoutTime;
-	}
+	}	
 	
-	public Person() {
+	public Person()
+	{
 		
 	}
-	
-	// max time person stays in line
-	protected double boothTime;
-	
-	public double getBoothTime() {
-		return boothTime;
+
+	public void setEateryTime(double d) {
+		this.eateryTime = d;	
 	}
-	
+
+	public void setTickTime(int tick) {
+		this.tickTime = tick;
+	}
+
+	public void setDestination(Eatery eatery) {
+		this.Destination = eatery;
+	}
+
 	public Eatery getDestination() {
 		return Destination;
 	}
 
-	public void setDestination(Eatery destination) {
-		Destination = destination;
-	}
-	
-	public int getTickTime() {
-		return tickTime;
-	}
-
-	public void setTickTime(int tickTime) {
-		this.tickTime = tickTime;
-	}
-
-	public void setEateryTime(double time) {
-		this.boothTime = time;
+	public double getBoothTime() {
+		return leaveTime;
 	}
 }
