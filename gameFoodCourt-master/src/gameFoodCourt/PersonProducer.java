@@ -1,6 +1,3 @@
-/**
- * 
- */
 package gameFoodCourt;
 
 import java.util.Random;
